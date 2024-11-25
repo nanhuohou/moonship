@@ -297,7 +297,7 @@
     const audioElement = document.getElementById('myAudio')
     // audioElement.play()
     var isClick = false
-    document.addEventListener('click', function () {
+    document.addEventListener.('click', function () {
       audioElement.volume = 0.1
       
       if (isClick == true) {
@@ -306,7 +306,7 @@
         audioElement.play() // 用户点击页面后自动播放音频
         isClick = true
       }
-    })
+    },{once:true})
 
     let box = document.querySelectorAll('.box')[0]
     if (
