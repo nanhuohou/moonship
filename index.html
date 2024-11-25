@@ -296,9 +296,10 @@
   <script>
     const audioElement = document.getElementById('myAudio')
     // audioElement.play()
+    var isClick = false
     document.addEventListener('click', function () {
       audioElement.volume = 0.1
-      var isClick = false
+      
       if (isClick) {
       } else {
         audioElement.load()
